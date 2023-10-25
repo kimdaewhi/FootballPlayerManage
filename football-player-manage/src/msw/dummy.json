@@ -1,0 +1,18 @@
+[
+    { "id": 1, "name": "Takehiro Tomiyasu", "country": "Japan", "height": 185, "birth": "1998.11.05", "age": 24, "position": "LB, RB", "club": "Arsnal  FC", "shirtsnum": 18, "foot": "R" }, 
+    { "id": 2, "name": "William Saliba", "country": "France", "height": 193, "birth": "2001.03.24", "age": 22, "position": "CB", "club": "Arsnal  FC", "shirtsnum": 2, "foot": "R" }, 
+    { "id": 3, "name": "David Raya", "country": "Spain", "height": 183, "birth": "1995.09.15", "age": 28, "position": "GK", "club": "Arsnal  FC", "shirtsnum": 22, "foot": "R" }, 
+    { "id": 4, "name": "Gabriel Magalhães", "country": "Brazil", "height": 190, "birth": "1997.12.15", "age": 25, "position": "CD", "club": "Arsnal  FC", "shirtsnum": 6, "foot": "L" }, 
+    { "id": 5, "name": "Oleksandr Zinchenko", "country": "Ukraine", "height": 175, "birth": "1996.12.15", "age": 26, "position": "LB", "club": "Arsnal  FC", "shirtsnum": 35, "foot": "L" }, 
+    { "id": 6, "name": "Declan Rice", "country": "England", "height": 188, "birth": "1999.01.14", "age": 24, "position": "CDM, CM, CB", "club": "Arsnal  FC", "shirtsnum": 41, "foot": "R" }, 
+    { "id": 7, "name": "Thomas Partey", "country": "Ghana", "height": 185, "birth": "1993.06.13", "age": 30, "position": "CM, CDM, RB", "club": "Arsnal  FC", "shirtsnum": 5, "foot": "R" }, 
+    { "id": 8, "name": "Jorginho", "country": "Italy", "height": 178, "birth": "1991.12.20", "age": 31, "position": "CM, CDM", "club": "Arsnal  FC", "shirtsnum": 20, "foot": "R" }, 
+    { "id": 9, "name": "Martin Ødegaard", "country": "Norway", "height": 178, "birth": "1998.12.17", "age": 24, "position": "CAM, CM, RW", "club": "Arsnal  FC", "shirtsnum": 8, "foot": "L" }, 
+    { "id": 10, "name": "Kai Havertz", "country": "Germany", "height": 193, "birth": "1999,06.11", "age": 24, "position": "CF, CAM, RW", "club": "Arsnal  FC", "shirtsnum": 29, "foot": "L" }, 
+    { "id": 11, "name": "Fábio Vieira", "country": "Portugal", "height": 170, "birth": "2000.05.30", "age": 23, "position": "CAM, RM, CM", "club": "Arsnal  FC", "shirtsnum": 21, "foot": "L" }, 
+    { "id": 12, "name": "Gabriel Martinelli", "country": "Brazil", "height": 178, "birth": "2001.06.18", "age": 22, "position": "CF, RW, LW", "club": "Arsnal  FC", "shirtsnum": 11, "foot": "R" }, 
+    { "id": 13, "name": "Leandro Trossard", "country": "Belgium", "height": 172, "birth": "1994.12.04", "age": 28, "position": "LW, CAM, SS", "club": "Arsnal  FC", "shirtsnum": 19, "foot": "R" }, 
+    { "id": 14, "name": "Bukayo Saka", "country": "England", "height": 178, "birth": "2001.09.05", "age": 22, "position": "RW, LW, RM", "club": "Arsnal  FC", "shirtsnum": 7, "foot": "L" }, 
+    { "id": 15, "name": "Gabriel Jesus", "country": "Brazil", "height": 175, "birth": "1997.04.03", "age": 26, "position": "CF, LW, RW", "club": "Arsnal  FC", "shirtsnum": 9, "foot": "R" }, 
+    { "id": 16, "name": "Eddie Nketiah", "country": "England", "height": 175, "birth": "1999.05.30", "age": 24, "position": "CF, RW, LW", "club": "Arsnal  FC", "shirtsnum": 14, "foot": "R" }
+]
