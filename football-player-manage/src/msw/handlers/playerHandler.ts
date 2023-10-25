@@ -1,7 +1,7 @@
 import { rest } from "msw";
 import players from '../dummy_players.json';
 
-const handlers = [
+const playerHandlers = [
     // ⭐ ctx : HTTP 요청 및 응답에 대한 컨텍스트 객체.
     // ⭐ ctx와 res의 차이 : 응답 context를 제어할 수 있는 다양한 메서드 및 속성이 존재한다...
 
@@ -43,4 +43,4 @@ async function sleep(timeout: number) {
     });
 }
 
-export { handlers };
+export { playerHandlers };

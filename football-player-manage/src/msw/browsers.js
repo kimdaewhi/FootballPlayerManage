@@ -1,6 +1,6 @@
 import { setupWorker } from "msw";
-import { handlers} from "./handlers/handler.ts";
+import { playerHandlers} from "./handlers/playerHandler.ts";
 
-const worker = setupWorker(...handlers);
+const worker = setupWorker(...playerHandlers);
 
 export { worker };
