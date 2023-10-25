@@ -3,6 +3,8 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 
+import { useSelector, useDispatch } from 'react-redux';
+
 export default function SearchInput() {
     const [players, setPlayers] = useState([]);
 
@@ -10,7 +12,7 @@ export default function SearchInput() {
         // 데이터 엔드포인트로 GET 요청
         fetch('/players').then((response) => response.json()).then((data) => {
             setPlayers(data);
-            console.log(players);
+            // console.log(players);
         }).catch((error) => {
             console.error("Error fetching data : ", error);
         });

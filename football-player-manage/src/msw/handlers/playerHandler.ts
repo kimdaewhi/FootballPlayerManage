@@ -8,7 +8,7 @@ const playerHandlers = [
     // get 메서드. req : 요청 데이터, res : 서버로부터 response 받은 객체(?), ctx : 응답 결과 컨텍스트
     rest.get("/players", async(req, res, ctx) => {
         // 서버로부터 딜레이 후에 받았다고 가정하기 위해 2초 sleep
-        await sleep(1000);
+        await sleep(2000);
         // response 객체에 응답 context 코드, 응답 해준 json내용(?) 반환
         return res(ctx.status(200), ctx.json(players));
     }),
@@ -16,7 +16,7 @@ const playerHandlers = [
     // post 메서드. get과 마찬가지
     rest.post("/players", async(req, res, ctx) => {
         // 여기도 get과 마찬가지로 delay 예제
-        await sleep(1000);
+        await sleep(2000);
 
         // 서버에 데이터를 push할 내용(?)
         players.push({
