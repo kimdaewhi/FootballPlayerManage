@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const playersReducer = createSlice({
-    name: "playersReducer",
+    name: "players",
     initialState: {
-        id: 0,
+        id: "000000",
         name: "",
         country: "",
         height: 0,
