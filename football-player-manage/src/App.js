@@ -1,10 +1,20 @@
 import './App.css';
+import { useSelector } from 'react-redux';
 import SearchInput from './components/SearchInput';
 
 function App() {
+  const players = useSelector((state) => state.players);
   return (
     <div className="App">
+      <button 
+        onClick={(e) => {
+            console.log(players);
+          }}>Test</button>
+
+        <br/>
+        
       <SearchInput/>
+
     </div>
   );
 }
