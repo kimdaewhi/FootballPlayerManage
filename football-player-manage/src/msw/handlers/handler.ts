@@ -10,7 +10,7 @@ const handlers = [
         // 서버로부터 딜레이 후에 받았다고 가정하기 위해 2초 sleep
         await sleep(1000);
         // response 객체에 응답 context 코드, 응답 해준 json내용(?) 반환
-        return res(ctx.status(200), ctx.json(footballPlayer));
+        return res(ctx.status(200), ctx.json(players));
     }),
     
     // post 메서드. get과 마찬가지
@@ -20,7 +20,7 @@ const handlers = [
 
         // 서버에 데이터를 push할 내용(?)
         players.push({
-            id: 17,
+            id: "000017",
             name: "Son heung min",
             country: "Korea, Republic of",
             height: 183,
