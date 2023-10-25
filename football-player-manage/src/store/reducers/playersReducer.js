@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const FootballPlayerSlice = createSlice({
-    name: "footballPlayer",
+export const playersReducer = createSlice({
+    name: "playersReducer",
     initialState: {
         id: 0,
         name: "",
@@ -31,4 +31,4 @@ export const FootballPlayerSlice = createSlice({
     }
 });
 
-export default FootballPlayerSlice.reducer;
+export default playersReducer.reducer;
