@@ -27,7 +27,7 @@ const playerHandlers = [
             birth: "1992.07.08",
             age: 31,
             position: "LW, ST",
-            club: "Tottenham Hotspur Football Club",
+            team: "Tottenham Hotspur Football Club",
             shirtsnum: 7,
             foot: "R"
         });
