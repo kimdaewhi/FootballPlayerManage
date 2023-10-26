@@ -14,6 +14,9 @@ export default function SearchInput() {
     const players = useSelector((state) => state.players);                  // 선수 리스트
     const selectedPlayer = useSelector((state) => state.selectedPlayer);    // 선택된 선수 정보
 
+    // 드롭다운 열림 여부(마우스 클릭 : false, TextField 빈 값 : false, 키보드 입력 : true) 나중에 해보자...
+    // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
     useEffect(() => {
         if(players.length === 0) {
             // 데이터 엔드포인트로 GET 요청
@@ -54,6 +57,10 @@ export default function SearchInput() {
                     options={players}
                     getOptionLabel={(player) => player.name}        // 표시할 텍스트
                     onChange={handlePlayerSelected}
+                    // open={isDropdownOpen}
+                    // onInputChange={(event, value) => {
+                    //     setIsDropdownOpen(value !== '');
+                    // }}
                     renderInput={(params) => (
                     <TextField
                         {...params}
