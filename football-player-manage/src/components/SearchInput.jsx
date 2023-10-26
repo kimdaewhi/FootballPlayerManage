@@ -9,8 +9,10 @@ import { updatePlayer } from '../store/reducers/playersReducer';
 import { updateSelectedPlayer } from '../store/reducers/selectedPlayerReducer';
 
 export default function SearchInput() {
-    const players = useSelector((state) => state.players);
     const dispatch = useDispatch();
+
+    const players = useSelector((state) => state.players);
+    const selectedPlayer = useSelector((state) => state.selectedPlayer);
 
     useEffect(() => {
         console.log("useEffect");
@@ -24,9 +26,22 @@ export default function SearchInput() {
         });
     }, []);
 
-    const [selectedPlayer, setSelectedPlayer] = useState(null);
+    
     const handlePlayerSelected = (event, value) => {
-        setSelectedPlayer(value);
+        dispatch(updateSelectedPlayer({
+                id: value.id,
+                name: value.name,
+                country: value.country,
+                height: value.height,
+                birth: value.birth,
+
+                age: value.age,
+                position: value.position,
+                team: value.team,
+                shritsnum: value.shritsnum,
+                foot: value.foot,
+            })
+        )
     };
 
     return (
