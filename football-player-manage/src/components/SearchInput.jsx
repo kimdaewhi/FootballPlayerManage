@@ -6,6 +6,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { updatePlayer } from '../store/reducers/playersReducer';
+import { updateSelectedPlayer } from '../store/reducers/selectedPlayerReducer';
 
 export default function SearchInput() {
     const players = useSelector((state) => state.players);
