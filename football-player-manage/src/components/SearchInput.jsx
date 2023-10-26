@@ -54,12 +54,14 @@ export default function SearchInput() {
                         <div>
                             <h2>{selectedPlayer.name}</h2>
                             <p><b>ID :</b> {selectedPlayer.id}</p>
+                            <p><b>Age :</b> {selectedPlayer.age}</p>
                             <p><b>Country :</b> {selectedPlayer.country}</p>
                             <p><b>Height :</b> {selectedPlayer.height} cm</p>
                             <p><b>Team :</b> {selectedPlayer.team}</p>
                             <p><b>Foot :</b> {selectedPlayer.foot}</p>
                             <p><b>Birth :</b> {selectedPlayer.birth}</p>
                             <p><b>Position :</b> {selectedPlayer.position}</p>
+                            <p><b>Shirts Number :</b> {selectedPlayer.shirtsnum}</p>
                             {/* 다른 선수 정보 표시 */}
                         </div>
                     )}
