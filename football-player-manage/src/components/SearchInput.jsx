@@ -11,22 +11,24 @@ import { updateSelectedPlayer } from '../store/reducers/selectedPlayerReducer';
 export default function SearchInput() {
     const dispatch = useDispatch();
 
-    const players = useSelector((state) => state.players);
-    const selectedPlayer = useSelector((state) => state.selectedPlayer);
+    const players = useSelector((state) => state.players);                  // 선수 리스트
+    const selectedPlayer = useSelector((state) => state.selectedPlayer);    // 선택된 선수 정보
 
     useEffect(() => {
-        console.log("useEffect");
-        // 데이터 엔드포인트로 GET 요청
-        fetch('/players').then((response) => response.json()).then((data) => {
-            data.forEach((player) => {
-                dispatch(updatePlayer(player));
+        if(players.length === 0) {
+            // 데이터 엔드포인트로 GET 요청
+            fetch('/players').then((response) => response.json()).then((data) => {
+                data.forEach((player) => {
+                    dispatch(updatePlayer(player));
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching data : ", error);
             });
-        }).catch((error) => {
-            console.error("Error fetching data : ", error);
-        });
-    }, []);
+        }
+    }, [players, dispatch]);
 
-    
+    // 선택된 선수를 토대로 store 상태 update
     const handlePlayerSelected = (event, value) => {
         dispatch(updateSelectedPlayer({
                 id: value.id,
@@ -47,7 +49,8 @@ export default function SearchInput() {
     return (
         <>
             <Stack spacing={2} sx={{ width: 300 }}>
-                <Autocomplete freeSolo id="free-solo-2-demo" disableClearable
+                <Autocomplete freeSolo id="free-solo-2-demo"
+                    disableClearable
                     options={players}
                     getOptionLabel={(player) => player.name}        // 표시할 텍스트
                     onChange={handlePlayerSelected}
