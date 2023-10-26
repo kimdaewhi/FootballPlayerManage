@@ -1,5 +1,5 @@
 import { rest } from "msw";
-import players from '../dummy_players.json';
+import players from '../dummys/dummy_players.json';
 
 const playerHandlers = [
     // ⭐ ctx : HTTP 요청 및 응답에 대한 컨텍스트 객체.

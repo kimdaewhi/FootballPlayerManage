@@ -1,0 +1,9 @@
+.player-information {
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.player-information.open {
+    max-height: 1000px; /* 충분히 큰 값, 애니메이션 높이를 조절 */
+}

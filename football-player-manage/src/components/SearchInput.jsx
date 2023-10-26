@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import PlayerInformation from './DetailInfo/PlayerInformation';
+
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
@@ -12,7 +14,6 @@ export default function SearchInput() {
     const dispatch = useDispatch();
 
     const players = useSelector((state) => state.players);                  // 선수 리스트
-    const selectedPlayer = useSelector((state) => state.selectedPlayer);    // 선택된 선수 정보
 
     // 드롭다운 열림 여부(마우스 클릭 : false, TextField 빈 값 : false, 키보드 입력 : true) 나중에 해보자...
     // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -75,23 +76,8 @@ export default function SearchInput() {
 
                 <hr/>
 
-                <div>
-                    {selectedPlayer && (
-                        <div>
-                            <h2>{selectedPlayer.name}</h2>
-                            <p><b>ID :</b> {selectedPlayer.id}</p>
-                            <p><b>Age :</b> {selectedPlayer.age}</p>
-                            <p><b>Country :</b> {selectedPlayer.country}</p>
-                            <p><b>Height :</b> {selectedPlayer.height} cm</p>
-                            <p><b>Team :</b> {selectedPlayer.team}</p>
-                            <p><b>Foot :</b> {selectedPlayer.foot}</p>
-                            <p><b>Birth :</b> {selectedPlayer.birth}</p>
-                            <p><b>Position :</b> {selectedPlayer.position}</p>
-                            <p><b>Shirts Number :</b> {selectedPlayer.shirtsnum}</p>
-                            {/* 다른 선수 정보 표시 */}
-                        </div>
-                    )}
-                </div>
+                <PlayerInformation/>
+                
             </Stack>
         </>
     )
