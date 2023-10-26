@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
-import PlayerInformation from './DetailInfo/PlayerInformation';
-
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { updatePlayer } from '../store/reducers/playersReducer';
-import { updateSelectedPlayer } from '../store/reducers/selectedPlayerReducer';
+import { updateSelectedPlayer, clearSelectedPlayer } from '../store/reducers/selectedPlayerReducer';
 
 export default function SearchInput() {
     const dispatch = useDispatch();
@@ -50,6 +48,10 @@ export default function SearchInput() {
         )
     };
 
+    const handleClearClick = () => {
+        dispatch(clearSelectedPlayer());
+    }
+
     return (
         <>
             <Stack spacing={2} sx={{ width: 300 }}>
@@ -73,12 +75,11 @@ export default function SearchInput() {
                     />
                     )}
                 />
-
-                <hr/>
-
-                <PlayerInformation/>
-                
             </Stack>
+
+            <br/>
+
+            <button onClick={handleClearClick}>clear</button>
         </>
     )
 }
