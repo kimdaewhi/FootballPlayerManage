@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { Container, Box } from '@mui/system';
 
-import PlayerNamePaper from './PlayerNamePaper';
+import PlayerCard from './PlayerCard';
 
 
 
@@ -26,7 +26,7 @@ export default function PlayerInformation() {
                             paddingTop: "50px",
                             paddingBottom: "50px" }} 
                     >
-                        <PlayerNamePaper/>
+                        <PlayerCard/>
                     </Container>
                 </div> 
             )}
